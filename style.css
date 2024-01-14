@@ -62,7 +62,7 @@ main {
   min-width: 60%;
   width: 960px;
   margin: 0 auto;
-  margin-top: 9vh;
+  margin-top: 15vh;
   background-color: rgba(0, 0, 0, 0.250);
   margin-bottom: 50vh;
   border-radius: 2vh 2vh 6vw  6vw ;
@@ -230,7 +230,7 @@ main {
       width: 0%;
     }
     30% {
-      width: 21.5vh;
+      width: 22vh;
     }
     31%{
       border-right: .15em solid white;
@@ -251,7 +251,7 @@ main {
       border-right: .15em solid black;
     }
     85%{
-      width: 22.5vh;;
+      width: 22vh;;
     }
     95%{
       width: 0%;
@@ -387,11 +387,16 @@ header img{
   100%{color: rgb(255, 0, 0);}
 }
 .mybio{
-  animation: 5s anim-popoutin ease forwards;
+  animation: 10s anim-popoutin ease forwards;
 }
 
 @keyframes anim-popoutin {
-  0% {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  20% {
     color: black;
     transform: scale(0);
     opacity: 0;
@@ -410,7 +415,6 @@ header img{
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    
     transform: scale(1);
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
