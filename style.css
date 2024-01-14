@@ -230,7 +230,7 @@ main {
       width: 0%;
     }
     30% {
-      width: 21vh;
+      width: 21.5vh;
     }
     31%{
       border-right: .15em solid white;
@@ -251,7 +251,7 @@ main {
       border-right: .15em solid black;
     }
     85%{
-      width: 21vh;;
+      width: 22.5vh;;
     }
     95%{
       width: 0%;
