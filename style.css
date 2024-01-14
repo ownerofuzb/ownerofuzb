@@ -1,0 +1,461 @@
+@font-face {
+  font-family: Kanit;
+  src: url('fonts/Kanit/Kanit-Black.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-BlackItalic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-Bold.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-BoldItalic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-Extr  ld.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-ExtraBoldItalic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-ExtraLight.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-ExtraLightItalic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-Italic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-Light.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-LightItalic.ttf') format('ttf'),
+       url('fonts/Kanit/Kanit-Medium.ttf') format('ttf'),
+}
+.logo{
+  width: 11vh;
+  height: 11vh;
+  margin-left: 2vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.video-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+
+.videobgcontet {
+  position: relative;
+  z-index: 1; 
+  overflow-y: auto; 
+  max-height: 100vh; 
+}
+header {
+  background-color: rgba(0, 0,   0, 0.400);
+  display: flex;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 999; 
+  border-radius: 0px 0px  3vh 3vh;
+}
+
+
+main {
+  max-width: 90%;
+  min-width: 60%;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 9vh;
+  background-color: rgba(0, 0, 0, 0.250);
+  margin-bottom: 50vh;
+  border-radius: 2vh 2vh 6vw  6vw ;
+  overflow: hidden;
+}
+
+.profile {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 0px;
+  border: 1vh solid black;
+  width: 260px;
+  height: 260px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 2vh;
+  min-width: 30vh;
+  min-height: 30vh;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  border-color: #ff0000;
+}
+
+.bio {
+  align-items: center;
+  width: auto;
+}
+
+.bio h2 {
+  color: white;
+  font-size: 4vh;
+  margin-bottom: 2vh;
+}
+
+.bio p {
+  transition: color 0.3s;
+}
+
+.social-media h2{
+  color: white;
+  font-size: 4vh;
+  margin-bottom: 2vh;
+}
+
+.social-media {
+  text-align: center;
+  padding: 60px 0;
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 0px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+
+.social-icons {
+  justify-content: center;
+  display: inline-block;
+  
+  max-width: 100%;
+}
+.photo1{
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  border-radius: 2vh 2vh 0vh 0vh;
+}
+.photo1 img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.photo1 :hover img{
+  transform: scale(1.5);
+}
+
+.box{
+  width: 45%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.200);
+  display: inline-block;
+  margin: 2%;
+  padding: 1.5%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.600);
+  border-radius: 1vh 1vh 2vh 2vh;
+  font-weight: 900
+}
+
+
+
+
+.contact-me {
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 2vh;
+  background-color: #2a52be;
+  color: #fff;
+}
+
+.contact-me h2 {
+  margin-bottom: 20px;
+  font-size: 4vh;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+.contact-buttons img {
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 50%;
+
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 1vh;
+  overflow: hidden;
+}
+
+
+
+#type {
+    margin: auto;
+    margin-bottom: 2vh;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-size: 3vh;
+    animation:  typing-erasing 6s steps(50, end) infinite;
+    color: rgb(0, 21, 255);
+    font-family:  Copperplate, Papyrus, fantasy;
+  }
+
+  @keyframes typing-erasing {
+    0%{
+      width: 0%;
+    }
+    10%{
+      width: 0%;
+    }
+    30% {
+      width: 17vh;
+    }
+    31%{
+      border-right: .15em solid white;
+    }
+    40%{
+      border-right: .15em solid black;
+    }
+    50%{
+      border-right: .15em solid white;
+    }
+    60%{
+      border-right: .15em solid black;
+    }
+    70%{
+      border-right: .15em solid white;
+    }
+    80%{
+      border-right: .15em solid black;
+    }
+    85%{
+      width: 17vh;;
+    }
+    95%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+.mybio{
+  z-index: 990;
+  width: 80%;
+  font-size: 3vh;
+  background-color: rgba(0, 0, 0, 0.100);
+  color: white;
+  margin: auto;
+  font-family: Kanit;
+  border-radius: 2vh;
+  position: relative;
+
+}
+
+
+
+
+
+.title-word {
+  animation: color-animation 2s linear infinite;
+  font-size: 2vh;
+}
+
+.title-word-1 {
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #ffffff;
+}
+
+
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  25%    {color: var(--color-1)}
+  50%   {color: var(--color-2)}
+  75%    {color: var(--color-2)}
+  100%   {color: var(--color-3)}
+}
+
+.link{
+  margin: 2%; 
+  align-self: center;
+  font-size: 2vh;
+  color: #6c3;
+}
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 140%;
+  text-transform: uppercase;
+}
+header img{
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #afafaf 29%,
+    #4b4b4b 67%,
+    #ffffff 100%
+  );
+  font-family: Impact, fantasy;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 110%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.animate-charcter2
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #afafaf 29%,
+    #4b4b4b 67%,
+    #ffffff 100%
+  );
+  font-family: Impact, fantasy;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 110%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.here{
+  animation: change 2s infinite;
+}
+@keyframes change {
+  0%{color: white;}
+  100%{color: rgb(255, 0, 0);}
+}
+.mybio{
+  animation: 5s anim-popoutin ease forwards;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: transparent;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: transparent;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
