@@ -343,7 +343,8 @@ header img{
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 110%;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 @keyframes textclip {
