@@ -381,6 +381,7 @@ header img{
   }
 }
 .here{
+  font-weight: bold;
   animation: change 2s infinite;
 }
 @keyframes change {
