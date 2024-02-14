@@ -219,7 +219,6 @@ main {
     font-size: 3vh;
     animation:  typing-erasing 6s steps(50, end) infinite;
     color: rgb(0, 21, 255);
-    font-family:  Copperplate, Papyrus, fantasy;
   }
 
   @keyframes typing-erasing {
